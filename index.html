@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Coffee Academy |</title>
+    <meta
+      name="description"
+      content="Beautiful Coffee Academy — Learn coffee craft, barista skills, roasting, and Nepal-origin coffee appreciation with modern, hands-on courses."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Montserrat", "ui-sans-serif", "system-ui", "Segoe UI", "Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- GLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+
+  <body class="font-display antialiased">
+    <!-- Skip link -->
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-xl focus:bg-emerald-900 focus:px-4 focus:py-2 focus:text-white focus:shadow"
+      >Skip to content</a
+    >
+
+    <header class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div id="site-nav" data-nav-theme="auto"></div>
+  </div>
+</header>
+
+    <main id="main">
+      <!-- Hero (full-screen background video) -->
+      <section id="home" class="relative min-h-screen overflow-hidden py-16 sm:py-20">
+        <!-- Hero image background (barista scene) -->
+        <img
+          class="hero-image absolute inset-0 h-full w-full object-cover"
+          style="filter: brightness(1.12) saturate(1.05);"
+          src="frontimage.JPG"
+          alt="Barista preparing coffee in a cafe"
+          aria-hidden="true"
+        />
+        <div class="absolute inset-0 bg-slate-950/15 pointer-events-none"></div>
+        <div class="absolute inset-y-0 left-0 w-full max-w-3xl bg-gradient-to-r from-slate-950/65 via-slate-950/20 to-transparent pointer-events-none"></div>
+        <!-- Optional video background: uncomment to restore video later -->
+        <!--
+        <video
+          class="hero-video absolute inset-0 h-full w-full object-cover"
+          style="filter: brightness(1.12) saturate(1.05);"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          aria-hidden="true"
+        >
+          <source src="./videoplayback.mp4" type="video/mp4" />
+          <source src="https://cdn.coverr.co/videos/coverr-preparing-coffee-7977/1080p.mp4" type="video/mp4" />
+        </video>
+        -->
+
+        <div class="relative pt-8 sm:pt-16 lg:pt-20">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid items-center gap-10 lg:grid-cols-12">
+              <div class="lg:col-span-12">
+                <div class="relative z-20" data-aos="fade-up">
+                  <div
+                    class="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 ring-1 ring-white/20 shadow-sm backdrop-blur-sm"
+                    data-aos="fade-up"
+                  >
+                  <span
+                    class="h-2 w-2 rounded-full"
+                    style="background: linear-gradient(90deg, rgba(214, 150, 90, 0.95), rgba(181, 104, 42, 0.95))"
+                    aria-hidden="true"
+                  ></span>
+                    <span class="text-xs font-semibold text-slate-200">Nepal-origin coffee craft • Modern barista training</span>
+                  </div>
+
+                  <h1 class="mt-4 sm:mt-5 text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white drop-shadow-2xl" data-aos="fade-up">
+                    Beautiful Coffee Academy
+                  </h1>
+                  <p class="mt-4 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white text-opacity-100 drop-shadow-2xl font-semibold" style="color: white; text-shadow: 0 1px 14px rgba(0, 0, 0, 0.35);" data-aos="fade-up">
+                    Discover the art and science of exceptional coffee at Beautiful Coffee Academy – your gateway to the rich, aromatic world of Nepali specialty coffee. We are more than just a training center; we are passionate cultivators, expert roasters, and dedicated educators committed to elevating Nepal&#39;s coffee culture.
+                  </p>
+
+                <div class="mt-6 sm:mt-7 flex flex-wrap items-center gap-3" data-aos="fade-up">
+                  <a
+                    href="#offerings"
+                    class="btn-primary rounded-full px-6 py-3 text-sm font-semibold transition will-change-transform"
+                    >Explore courses</a
+                  >
+                </div>
+
+                <dl class="mt-6 sm:mt-8 grid max-w-xl grid-cols-3 gap-2 sm:gap-3" data-aos="fade-up">
+                  <div class="surface-card rounded-lg p-3 sm:p-4">
+                    <dt class="text-xs font-semibold text-stone-500">Hands-on</dt>
+                    <dd class="mt-1 text-base sm:text-lg font-extrabold text-stone-900">80%</dd>
+                  </div>
+                  <div class="surface-card rounded-lg p-3 sm:p-4">
+                    <dt class="text-xs font-semibold text-stone-500">Group Size</dt>
+                    <dd class="mt-1 text-base sm:text-lg font-extrabold text-stone-900">Small</dd>
+                  </div>
+                  <div class="surface-card rounded-lg p-3 sm:p-4">
+                    <dt class="text-xs font-semibold text-stone-500">Outcomes</dt>
+                    <dd class="mt-1 text-base sm:text-lg font-extrabold text-stone-900">Job-ready</dd>
+                  </div>
+                </dl>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products (home + shop teaser) -->
+      <section id="products" class="relative mt-16 scroll-mt-28 sm:mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2
+            class="font-serif-display text-center text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl"
+            data-aos="fade-up"
+          >
+            Products
+          </h2>
+
+          <div class="products-grid-home mx-auto mt-10" data-aos="fade-up">
+            <a
+              href="./product.html?id=bca-medium-espresso"
+              class="shop-product-link surface-card group block rounded-xl p-3 transition hover:-translate-y-0.5 hover:shadow-md sm:p-4"
+              data-aos="fade-up"
+            >
+              <div class="shop-thumb-frame relative overflow-hidden rounded-lg">
+                <div class="aspect-square w-full bg-stone-100">
+                  <img
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                    src="BCA ESPRESSO ROAST.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="mt-3 text-center sm:text-left">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-slate-100 sm:text-base">BCA Medium Roast (Espresso)</p>
+                <p class="mt-1 text-sm font-semibold text-slate-300">Rs. 3200 / 1kg</p>
+              </div>
+            </a>
+            <a
+              href="./product.html?id=illam-washed"
+              class="shop-product-link surface-card group relative block rounded-xl p-3 transition hover:-translate-y-0.5 hover:shadow-md sm:p-4"
+              data-aos="fade-up"
+              data-aos-delay="40"
+            >
+              <!-- <span class="product-badge product-badge--sold">Sold out</span> -->
+              <div class="shop-thumb-frame relative overflow-hidden rounded-lg">
+                <div class="aspect-square w-full bg-stone-100">
+                  <img
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                    src="./illam.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="mt-3 text-center sm:text-left">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-slate-100 sm:text-base">Illam Washed</p>
+                <p class="mt-1 text-sm font-semibold text-slate-300">Rs. 1500 / 200g</p>
+              </div>
+            </a>
+            <a
+              href="./product.html?id=red-honey-rasuwa"
+              class="shop-product-link surface-card group block rounded-xl p-3 transition hover:-translate-y-0.5 hover:shadow-md sm:p-4"
+              data-aos="fade-up"
+              data-aos-delay="80"
+            >
+              <!-- <span class="product-badge product-badge--sold">Sold out</span> -->
+              <div class="shop-thumb-frame relative overflow-hidden rounded-lg">
+                <div class="aspect-square w-full bg-stone-100">
+                  <img
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                    src="./khalchet.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="mt-3 text-center sm:text-left">
+                <p class="text-sm font-extrabold uppercase tracking-wide text-slate-100 sm:text-base">Red Honey Rasuwa</p>
+                <p class="mt-1 text-sm font-semibold text-slate-300">Rs. 2100 / 200g</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="mt-10 flex justify-center" data-aos="fade-up">
+            <a class="btn-ghost-pill" href="./shop.html">View Products</a>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- What We Offer -->
+      <section id="offerings" class="relative mt-16 scroll-mt-28 sm:mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 class="font-serif-display text-4xl font-bold tracking-tight text-emerald-900 sm:text-5xl" data-aos="fade-up">What We Offer</h2>
+            </div>
+          </div>
+
+          <div class="mt-12 grid gap-8 md:grid-cols-2">
+            <!-- Professional Barista Training -->
+            <div class="surface-card rounded-lg p-8" data-aos="fade-up">
+              <div class="flex items-start gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-100 text-2xl">☕</div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-extrabold text-stone-900">Professional Barista Training</h3>
+                  <p class="mt-3 text-stone-700">
+                    Master the craft of coffee making with our comprehensive barista courses. From beginner basics to advanced techniques, our expert instructors will guide you through every step of creating the perfect cup.
+                  </p>
+                  <a href="./courses/barista-foundations.html" class="mt-4 inline-block text-sm font-semibold text-emerald-800 hover:text-emerald-900">Explore barista courses →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artisan Coffee Roasting -->
+            <div class="surface-card rounded-lg p-8" data-aos="fade-up" data-aos-delay="50">
+              <div class="flex items-start gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 text-2xl">🔥</div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-extrabold text-stone-900">Artisan Coffee Roasting</h3>
+                  <p class="mt-3 text-stone-700">
+                    Experience our state-of-the-art roasting facility where we transform premium green beans into aromatic masterpieces. Learn the intricate art of roasting or simply enjoy our expertly crafted blends.
+                  </p>
+                  <a href="./courses/roasting-essentials.html" class="mt-4 inline-block text-sm font-semibold text-emerald-800 hover:text-emerald-900">Explore roasting courses →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Premium Nepali Specialty Coffee -->
+            <div class="surface-card rounded-lg p-8" data-aos="fade-up" data-aos-delay="150">
+              <div class="flex items-start gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-stone-100 text-2xl">☕</div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-extrabold text-stone-900">Premium Nepali Specialty Coffee</h3>
+                  <p class="mt-3 text-stone-700">
+                    Discover our curated selection of the finest specialty coffees from Nepal's diverse coffee-growing regions. Each cup tells the story of our beautiful Himalayan terroir.
+                  </p>
+                  <a href="./shop.html" class="mt-4 inline-block text-sm font-semibold text-emerald-800 hover:text-emerald-900">Shop our coffee →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Farm-to-Cup Excellence -->
+            <div class="surface-card rounded-lg p-8" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-start gap-4">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-100 text-2xl">🌿</div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-extrabold text-stone-900">Farm-to-Cup Excellence</h3>
+                  <p class="mt-3 text-stone-700">
+                    We proudly operate our own coffee farms in the pristine highlands of <strong>Sindhuplanchowk</strong> and <strong>Gorkha</strong>, ensuring complete quality control from seed to cup.
+                  </p>
+                  <a href="./about/why-us.html" class="mt-4 inline-block text-sm font-semibold text-emerald-800 hover:text-emerald-900">Learn about our farms →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative mt-16 sm:mt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="surface-card overflow-hidden rounded-2xl p-4 sm:p-6 lg:p-8">
+            <div class="grid items-center gap-8 lg:grid-cols-12">
+              <div class="lg:col-span-6" data-aos="fade-right">
+                <div class="relative overflow-hidden rounded-xl">
+                  <img
+                    class="h-[380px] w-full object-cover sm:h-[460px]"
+                    src="./farmer.png"
+                    alt="Farmer working on coffee farm"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 rounded-lg bg-white/95 px-4 py-3 ring-1 ring-stone-200/80">
+                    <div class="text-xs font-semibold text-stone-500">Support our roots</div>
+                    <div class="text-sm font-extrabold text-stone-900">Scholarships • farms • training</div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-6" data-aos="fade-left">
+                <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-emerald-700">Support Our Roots</p>
+                <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-stone-900 sm:text-4xl">
+                  Help us grow the next generation of farmers.
+                </h2>
+                <p class="mt-4 text-base leading-relaxed text-stone-600">
+                  Direct payments via QR go straight to sustainable farming equipment, scholarships, and hands-on training at our Academy.
+                </p>
+                <div class="mt-6 space-y-4 text-sm text-stone-600">
+                  <div class="flex items-center gap-3">
+                    <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 text-white">✓</span>
+                    <span>Secure encrypted payments</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 text-white">✓</span>
+                    <span>Direct farm-to-table contribution</span>
+                  </div>
+                </div>
+                <div class="mt-7 flex flex-wrap items-center gap-3">
+                  <a href="./support-us.html" class="btn-primary support-cta rounded-full px-8 py-3.5 text-base font-semibold">Go to Support page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="relative mt-16 scroll-mt-28 sm:mt-24 pb-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="surface-card overflow-hidden rounded-xl p-6 sm:p-10" data-aos="fade-up">
+            <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+              <div class="lg:col-span-5">
+                <h2 class="text-3xl font-extrabold tracking-tight text-stone-900">Let’s Get In Touch</h2>
+                <p class="mt-3 max-w-xl text-stone-600">
+                  Whether you have a question, need assistance, or simply want to say hello—we’re here to help. Reach out
+                  anytime—we’d love to hear from you. You can also visit us at our academy in Balaju, Kathmandu to experience our coffee culture firsthand.
+                </p>
+
+                <div class="mt-7 grid gap-4 text-sm font-semibold text-stone-600">
+                  <div class="flex items-start gap-3">
+                    <span
+                      class="grid h-10 w-10 place-items-center rounded-xl bg-emerald-50 ring-1 ring-emerald-100"
+                      aria-hidden="true"
+                      >📞</span
+                    >
+                    <div>
+                      <div class="text-xs font-semibold text-stone-500">Phone</div>
+                      <a class="font-extrabold text-stone-800 hover:text-emerald-800" href="tel:+9779814894070">+977-9814894070</a>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span
+                      class="grid h-10 w-10 place-items-center rounded-xl bg-emerald-50 ring-1 ring-emerald-100"
+                      aria-hidden="true"
+                      >✉️</span
+                    >
+                    <div>
+                      <div class="text-xs font-semibold text-stone-500">Email</div>
+                      <a class="font-extrabold text-stone-800 hover:text-emerald-800" href="mailto:beautifulcoffeeacademy@gmail.com"
+                        >beautifulcoffeeacademy@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span
+                      class="grid h-10 w-10 place-items-center rounded-xl bg-emerald-50 ring-1 ring-emerald-100"
+                      aria-hidden="true"
+                      >📍</span
+                    >
+                    <div>
+                      <div class="text-xs font-semibold text-stone-500">Address</div>
+                      <div class="font-extrabold text-stone-800">Balaju-16, Kathmandu, Nepal</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-7 flex flex-wrap gap-3">
+                  <a href="./courses/barista-foundations.html" class="btn-outline rounded-full px-6 py-3 text-sm font-semibold text-stone-800"
+                    >View courses</a
+                  >
+                  <a href="#home" class="btn-primary rounded-full px-6 py-3 text-sm font-semibold">Back to top</a>
+                </div>
+              </div>
+
+              <div class="lg:col-span-7">
+                <div class="surface-card overflow-hidden rounded-xl p-2">
+                  <iframe
+                    class="h-[min(56vh,500px)] w-full rounded-[1.25rem] sm:h-[500px]"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1493.514231899498!2d85.30356597876555!3d27.72718110423342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19af862222a5%3A0x7ec8e8c9e1428dce!2sBeautiful%20coffee%20Academy!5e1!3m2!1sen!2snp!4v1777949926072!5m2!1sen!2snp"
+                    style="border: 0"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script src="./script.js"></script>
+
+        
+</html>
+<footer class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-stone-900 text-white py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-4">
+          <div class="space-y-4 text-center lg:text-left">
+            <img src="./logo.jpeg" alt="Beautiful Coffee Academy" class="mx-auto h-20 w-20 rounded-full border-2 border-white/20 bg-white/10 p-1 lg:mx-0" />
+            <p class="text-xl font-semibold text-white">Beautiful Coffee Academy</p>
+            <p class="text-sm leading-relaxed text-white/75">Specialty coffee education, curated beans, and origin stories from Nepal.</p>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.24em] text-white/90">Explore</h3>
+            <ul class="mt-6 space-y-3 text-sm text-white/70">
+              <li><a href="./index.html" class="hover:text-white">Home</a></li>
+              <li><a href="./about/why-us.html" class="hover:text-white">About</a></li>
+              <li><a href="./shop.html" class="hover:text-white">Shop</a></li>
+              <li><a href="./courses/barista-foundations.html" class="hover:text-white">Speciality Barista</a></li>
+              <li><a href="./gallery.html" class="hover:text-white">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.24em] text-white/90">Contact</h3>
+            <ul class="mt-6 space-y-4 text-sm text-white/70">
+              <li class="flex items-center gap-3">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-white/10 text-white">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M21 16.5v4.5a1 1 0 0 1-1.1 1c-9.8-.9-17.8-8-18.7-17.8A1 1 0 0 1 2.5 3H7a1 1 0 0 1 1 1c0 1.1-.1 2.2-.4 3.3a1 1 0 0 1-.7.7l-2.1.6a16 16 0 0 0 7.4 7.4l.6-2.1a1 1 0 0 1 .7-.7c1.1-.3 2.2-.4 3.3-.4a1 1 0 0 1 1 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <a href="tel:+9779814894070" class="hover:text-white">+977-9814894070</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-white/10 text-white">
+                  <svg width="35" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 4.5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22 6.5 12 13 2 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <a href="mailto:beautifulcoffeeacademy@gmail.com" class="hover:text-white">beautifulcoffeeacademy@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-[0.24em] text-white/90">Follow Us</h3>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="https://instagram.com/beautifulcoffeeacademy" class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm text-white hover:bg-white/10">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Z" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M16.25 11.75a4.25 4.25 0 1 1-8.5 0 4.25 4.25 0 0 1 8.5 0Z" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M17.75 6.75h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                Instagram
+              </a>
+              <a href="https://facebook.com/beautifulcoffeeacademy" class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm text-white hover:bg-white/10">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M15.5 22V13.5H18l.5-3.5h-3V7.25c0-1 .3-1.75 1.8-1.75H18V2.5S16.2 2 14.5 2c-3.3 0-5.5 2-5.5 5.8V10H6v3.5h3V22h3.5Z" fill="currentColor" />
+                </svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-white/10 pt-8 text-sm text-white/60 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p>© <span id="year"></span> Beautiful Coffee Academy. All rights reserved.</p>
+          <p>Beautiful Coffee Academy – Cultivating Excellence, One Cup at a Time</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+

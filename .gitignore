@@ -1,0 +1,11 @@
+# Unused site assets and local utility files
+specialitybaristacourse.jpeg
+rasuwa.png
+update_nav.py
+images/farm-1.jpg
+images/farm-2.jpg
+images/farm-hero.jpg
+
+# Ignore common Python cache files if any local scripts are present
+__pycache__/
+*.pyc
