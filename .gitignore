@@ -3,6 +3,8 @@ specialitybaristacourse.jpeg
 rasuwa.png
 update_nav.py
 images/farm-hero.jpg
+gallery.html
+farming.html
 
 # Ignore common Python cache files if any local scripts are present
 __pycache__/
